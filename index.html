@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2581369398';
+    var serviceWorkerVersion = '2842311948';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -59,4 +59,20 @@
 </html>
 <script type="text/javascript">
   window.flutterWebRenderer = "html";
+</script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "...",
+    authDomain: "[YOUR_PROJECT].firebaseapp.com",
+    databaseURL: "https://[YOUR_PROJECT].firebaseio.com",
+    projectId: "[YOUR_PROJECT]",
+    storageBucket: "[YOUR_PROJECT].appspot.com",
+    messagingSenderId: "...",
+    appId: "1:...:web:...",
+    measurementId: "G-...",
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
